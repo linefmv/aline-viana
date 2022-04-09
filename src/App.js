@@ -1,12 +1,12 @@
 import Title from './Components/Title';
-import Reposfilter from './Components/Reposfilter';
+import MenuLeft from "./Components/MenuLeft/MenuLeft";
 
 function App() {
   return (
     <>
+        <MenuLeft/>
         <Title>Repositories Github</Title>
         <Title>Repositories</Title>
-        <Reposfilter />
     </>
   );
 }
