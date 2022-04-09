@@ -1,12 +1,18 @@
-import Title from './Components/Title';
+import './App.css'
+
 import MenuLeft from "./Components/MenuLeft/MenuLeft";
+import Resume from "./Components/Resume/Resume";
+import MainDescribe from "./Components/MainDescribe/MainDescribe";
+
 
 function App() {
   return (
     <>
-        <MenuLeft/>
-        <Title>Repositories Github</Title>
-        <Title>Repositories</Title>
+        <main>
+        <MenuLeft />
+        <MainDescribe />
+        <Resume />
+        </main>
     </>
   );
 }
