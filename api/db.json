@@ -1,0 +1,29 @@
+{
+  "studies": [
+    {
+      "id": 1,
+      "name": "Reprograma",
+      "title": "FrontEnd",
+      "about": "",
+      "link": ""
+    },
+    {
+      "id": 2,
+      "name": "Reprograma",
+      "title": "UX/UI Design",
+      "about": "",
+      "link": ""
+    }
+  ],
+  "aboutMe": [
+    {
+      "id": 1,
+      "name": "Aline",
+      "last_name": "Viana",
+      "history": "Frontend, 24 and learning about performance. Career changing and glad to be in tech",
+      "email": "sebastian@codingthesmartway.com",
+      "linkedin": "https://www.linkedin.com/in/viana-aline/",
+      "github": "https://github.com/linefmv"
+    }
+  ]
+}
