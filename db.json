@@ -15,13 +15,19 @@
       "link": ""
     }
   ],
+  "front": [
+    { "id": 1, "title": "React"}
+  ],
+  "design": [
+    { "id": 1, "title": "Design"}
+  ],
   "aboutMe": [
     {
       "id": 1,
       "name": "Aline",
       "last_name": "Viana",
       "history": "Frontend, 24 and learning about performance. Career changing and glad to be in tech",
-      "email": "sebastian@codingthesmartway.com",
+      "email": "alinemaciel018@gmail.com",
       "linkedin": "https://www.linkedin.com/in/viana-aline/",
       "github": "https://github.com/linefmv"
     }
