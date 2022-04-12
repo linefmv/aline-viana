@@ -1,9 +1,9 @@
 import { Name } from './styles';
 
-const Resume = () => (
-    <Name>Aline Viana</Name>
-
+const Resume = (props) => {
+    return (
+            <Name>{props.database.aboutMe[0].name}</Name>
 )
-
+}
 
 export default Resume;
