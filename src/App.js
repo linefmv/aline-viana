@@ -7,11 +7,15 @@ import MainDescribe from "./Components/MainDescribe/MainDescribe";
 
 
 function App() {
-    let [data, setData] = useState('')
+    const [data, setData] = useState(null)
+
+    const fetchData = async () => {
+        const response = await getData()
+        setData(response)
+    }
 
     useEffect(() => {
-        getData()
-            .then(response => setData(response));
+        fetchData()
     }, [])
 
 
@@ -20,7 +24,7 @@ function App() {
         <main>
         <MenuLeft />
         <MainDescribe />
-        <Resume database={data}/>
+            {data && <Resume aboutMeData={data.aboutMe[0]}/>}
         </main>
     </>
   );
