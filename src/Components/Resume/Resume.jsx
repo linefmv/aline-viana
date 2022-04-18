@@ -1,22 +1,20 @@
-import {Name, History, Content, Image, SocialMedia, Email, Linkedin, Github, SocialImages} from './styles';
+import { Name, History, Content, Image, SocialMedia } from "./styles";
 
-import GithubIcon from './../../assets/github.svg';
-import Me from '../../assets/me.jpeg';
+import Me from "../../assets/me.jpeg";
 
-const Resume = ({aboutMeData}) => {
-    return (
-
-        <Content>
-            <Image src={Me}></Image>
-            <Name>{aboutMeData.fullName}</Name>
-            <History>{aboutMeData.history}</History>
-            <SocialMedia>
-                <Email href="alinemaciel018@gmail.com">Email</Email>
-                <Linkedin href="linkedin.com/linefmv">Linkedin</Linkedin>
-                 <Github href="github.com/linefmv">Github</Github>
-            </SocialMedia>
-        </Content>
-    )
-}
+const Resume = ({ aboutMeData }) => {
+  return (
+    <Content>
+      <Image src={Me}></Image>
+      <Name>{aboutMeData.fullName}</Name>
+      <History>{aboutMeData.history}</History>
+      <SocialMedia>
+        <a href="mailto:alinemaciel018@gmail.com">Email</a>
+        <a href="https://linkedin.com/linefmv">Linkedin</a>
+        <a href="https://github.com/linefmv">Github</a>
+      </SocialMedia>
+    </Content>
+  );
+};
 
 export default Resume;
