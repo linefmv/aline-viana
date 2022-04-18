@@ -1,31 +1,31 @@
-import './App.css';
-import React, {useEffect, useState} from 'react';
-import getData from './services/api';
+import "./App.css";
+import React, { useEffect, useState } from "react";
+import getData from "./services/api";
 import MenuLeft from "./Components/MenuLeft/MenuLeft";
 import Resume from "./Components/Resume/Resume";
 import MainDescribe from "./Components/MainDescribe/MainDescribe";
 
-
 function App() {
-    const [data, setData] = useState(null)
+  const [data, setData] = useState(null);
 
-    const fetchData = async () => {
-        const response = await getData()
-        setData(response)
-    }
+  const fetchData = async () => {
+    const response = await getData();
+    setData(response);
+  };
 
-    useEffect(() => {
-        fetchData()
-    }, [])
-
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <>
+      {data && (
         <main>
-        <MenuLeft />
-        <MainDescribe />
-            {data && <Resume aboutMeData={data.aboutMe[0]}/>}
+          <MenuLeft />
+          <MainDescribe describeData={data.studies} />
+          <Resume aboutMeData={data.aboutMe[0]} />
         </main>
+      )}
     </>
   );
 }
