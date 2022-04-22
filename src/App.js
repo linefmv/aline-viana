@@ -22,7 +22,7 @@ function App() {
       {data && (
         <main>
           <MenuLeft />
-          <MainDescribe describeData={data.studies} />
+          <MainDescribe describeData={data.mainDescribe} />
           <Resume aboutMeData={data.aboutMe[0]} />
         </main>
       )}

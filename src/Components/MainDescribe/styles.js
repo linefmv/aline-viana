@@ -1,7 +1,18 @@
 import styled from 'styled-components';
 
 
-export const Name = styled.h3`
-font-size: 14px;
-  
+export const MainTitle = styled.h2`
+font-size: 20px;
 `;
+
+export const MainContent = styled.main``;
+
+export const MainComponent = styled.section``;
+
+export const StudiesComponent = styled.div``;
+
+export const ComponentTitle = styled.h3``;
+
+export const ComponentParagraph = styled.p``;
+
+export const ComponentSecundaryTitle = styled.h4``;
