@@ -8,5 +8,5 @@ main {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: red;
+  padding: 0 2vh;
 }
