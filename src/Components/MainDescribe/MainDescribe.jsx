@@ -1,28 +1,48 @@
+import AboutMyLife from "../AboutMyLife/AboutMyLife";
+import Experiences from "../Experiences/Experiences";
+import Studies from "../Studies/Studies";
+
 import {
   MainContent,
   MainTitle,
   MainComponent,
-  StudiesComponent,
+  Component,
   ComponentTitle,
   ComponentParagraph,
   ComponentSecundaryTitle,
+  ComponentLink,
 } from "./styles";
 
 const MainDescribe = ({ describeData }) => {
+  console.log(describeData)
   return (
     <MainContent>
       <MainTitle>General</MainTitle>
-      {describeData.map((item) => {
+      <AboutMyLife describeData={describeData.aboutMyLife}/>
+      <Experiences describeData={describeData.experiences}/>
+      <Studies describeData={describeData.studies}/>
+      {/* {describeData.map((item) => {
         return (
           <MainComponent>
-            <StudiesComponent>
-              <ComponentTitle key={item.id}> {item.name}</ComponentTitle>
+            <Component key={item.id}>
               <ComponentSecundaryTitle> {item.title}</ComponentSecundaryTitle>
-              <ComponentParagraph> {item.about}</ComponentParagraph>
-            </StudiesComponent>
+              <ComponentParagraph>{item.Me }</ComponentParagraph>
+              <Component />
+             {item.companyName && <ComponentTitle> {item.companyName}</ComponentTitle> }
+
+              <ComponentParagraph>{item.development}</ComponentParagraph>
+              <ComponentParagraph>{item.design}</ComponentParagraph>
+              <ComponentTitle> {item.companyName}</ComponentTitle>
+              <ComponentSecundaryTitle> {item.time}</ComponentSecundaryTitle>
+              <ComponentParagraph> {item.aboutExperience}</ComponentParagraph>
+              <ComponentParagraph> {item.school}</ComponentParagraph>
+              <ComponentParagraph> {item.titleCourse}</ComponentParagraph>
+              <ComponentParagraph> {item.aboutCourse}</ComponentParagraph>
+              <ComponentLink href={item.link}>{item.scholl}</ComponentLink>
+            </Component>
           </MainComponent>
         );
-      })}
+      })} */}
     </MainContent>
   );
 };
