@@ -5,7 +5,7 @@ import Me from "../../assets/me.jpeg";
 const Resume = ({ aboutMeData }) => {
   return (
     <Content>
-      <Image src={Me}></Image>
+      <Image src={Me}/>
       <Name>{aboutMeData.fullName}</Name>
       <History>{aboutMeData.history}</History>
       <SocialMedia>
