@@ -4,6 +4,7 @@ import getData from "./services/api";
 import MenuLeft from "./Components/MenuLeft/MenuLeft";
 import Resume from "./Components/Resume/Resume";
 import MainDescribe from "./Components/MainDescribe/MainDescribe";
+import Menu from "./Components/Menu/Menu"
 
 function App() {
   const [data, setData] = useState(null);
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <>
+    <Menu />
       {data && (
         <main>
           <MenuLeft />
