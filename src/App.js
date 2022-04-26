@@ -24,17 +24,18 @@ function App() {
       <Menu />
       <Routes>
         {data && (
-          <Route
+        <>  <Route
             exact
             path="/"
             element={
               <main>
                 <MenuLeft />
                 <MainDescribe describeData={data} />
-                <Resume aboutMeData={data.aboutMe[0]} />
               </main>
             }
-          />
+            />
+        <Resume aboutMeData={data.aboutMe[0]}/>
+        </>
         )}
       </Routes>
     </>
