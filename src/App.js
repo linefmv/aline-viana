@@ -22,22 +22,19 @@ function App() {
   return (
     <>
       <Menu />
-      <Routes>
-        {data && (
-        <>  <Route
-            exact
-            path="/"
-            element={
-              <main>
-                <MenuLeft />
-                <MainDescribe describeData={data} />
-              </main>
-            }
+      {data && (
+        <main>
+          <MenuLeft />
+          <Routes>
+            <Route
+              exact
+              path="/"
+              element={<MainDescribe describeData={data} />}
             />
-        <Resume aboutMeData={data.aboutMe[0]}/>
-        </>
-        )}
-      </Routes>
+          </Routes>
+          <Resume aboutMeData={data.aboutMe[0]} />
+        </main>
+      )}
     </>
   );
 }
