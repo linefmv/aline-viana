@@ -1,6 +1,6 @@
 import { Name, History, Content, Image, SocialMedia } from "./styles";
 
-import Me from "../../assets/me.jpeg";
+import Me from "../../assets/img/me.jpeg";
 
 const Resume = ({ aboutMeData }) => {
   return (
