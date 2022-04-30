@@ -1,7 +1,6 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import getData from "./services/api";
-import MenuLeft from "./Components/MenuLeft/MenuLeft";
 import Resume from "./Components/Resume/Resume";
 import MainDescribe from "./Components/MainDescribe/MainDescribe";
 import Menu from "./Components/Menu/Menu";
@@ -24,7 +23,6 @@ function App() {
       <Menu />
       {data && (
         <main>
-          <MenuLeft />
           <Routes>
             <Route
               exact
