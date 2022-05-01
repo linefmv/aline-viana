@@ -3,12 +3,14 @@ import {
   ComponentTitle,
   ComponentParagraph,
   ComponentSecundaryTitle,
+  Title,
 } from "./styles";
 
 const Experiences = ({ describeData }) => {
   console.log(describeData);
   return (
     <>
+      <Title>Experiences</Title>
       {describeData.map((item) => {
         return (
           <>

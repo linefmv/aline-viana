@@ -4,12 +4,14 @@ import {
   ComponentParagraph,
   ComponentSecundaryTitle,
   ComponentLink,
+  Title,
 } from "./styles";
 
 const Studies = ({ describeData }) => {
   console.log(describeData);
   return (
     <>
+    <Title>Courses</Title>
       {describeData.map((item) => {
         return (
           <>
