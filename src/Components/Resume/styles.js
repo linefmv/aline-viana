@@ -14,7 +14,7 @@ export const Image = styled.img`
 `;
 export const Name = styled.p`
   text-align: center;
-  color: #F7B4A7;
+  color: #f7b4a7;
   padding: 2vh;
   font-weight: 700;
 `;

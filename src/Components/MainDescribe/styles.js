@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const MainContent = styled.main`
   display: flex;
   flex-direction: column;
@@ -17,21 +16,17 @@ export const MainContent = styled.main`
   p {
     text-indent: 10px;
   }
-    ::-webkit-scrollbar-track
-  {
-    border: 1px solid #F7B4A7;
-    background-color: #F5F5F5;
+  ::-webkit-scrollbar-track {
+    border: 1px solid #f7b4a7;
+    background-color: #f5f5f5;
   }
 
-  ::-webkit-scrollbar
-  {
+  ::-webkit-scrollbar {
     width: 10px;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
   }
 
-  ::-webkit-scrollbar-thumb
-  {
-    background-color: #F7B4A7;	
-  } 
-
+  ::-webkit-scrollbar-thumb {
+    background-color: #f7b4a7;
+  }
 `;

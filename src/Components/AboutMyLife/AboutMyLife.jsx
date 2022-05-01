@@ -1,8 +1,4 @@
-import {
-  Component,
-  ComponentTitle,
-  ComponentParagraph,
-} from "./styles";
+import { Component, ComponentTitle, ComponentParagraph } from "./styles";
 
 const AboutMyLife = ({ describeData }) => {
   return (
@@ -10,9 +6,9 @@ const AboutMyLife = ({ describeData }) => {
       {describeData.map((item) => {
         return (
           <>
-          <Component key={item.id}>
-            <ComponentTitle> {item.title}</ComponentTitle>
-            <ComponentParagraph>{item.about}</ComponentParagraph>
+            <Component key={item.id}>
+              <ComponentTitle> {item.title}</ComponentTitle>
+              <ComponentParagraph>{item.about}</ComponentParagraph>
             </Component>
           </>
         );
