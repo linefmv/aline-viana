@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const MainContent = styled.main`
   display: flex;
   flex-direction: column;
@@ -12,26 +13,25 @@ export const MainContent = styled.main`
     padding: 0 2vh;
     text-align: justify;
   }
-  
+
   p {
-      text-indent: 10px;
+    text-indent: 10px;
+  }
+    ::-webkit-scrollbar-track
+  {
+    border: 1px solid black;
+    background-color: #F5F5F5;
   }
 
-  ::-webkit-scrollbar {
-    width: 6px;
-    border-left: 1px solid #e6ecf8;
+  ::-webkit-scrollbar
+  {
+    width: 10px;
+    background-color: #F5F5F5;
   }
 
-  ::-webkit-scrollbar-track {
-    background: #e6ecf8;
-    border-radius: 20px;
-  }
+  ::-webkit-scrollbar-thumb
+  {
+    background-color: #000000;	
+  } 
 
-  ::-webkit-scrollbar-thumb {
-    background-color: pink;
-    border-radius: 20px;
-  }
-  ::-webkit-scrollbar {
-    width: 12px;
-  }
 `;
