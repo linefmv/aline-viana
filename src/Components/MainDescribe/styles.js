@@ -19,7 +19,7 @@ export const MainContent = styled.main`
   }
     ::-webkit-scrollbar-track
   {
-    border: 1px solid black;
+    border: 1px solid #F7B4A7;
     background-color: #F5F5F5;
   }
 
@@ -31,7 +31,7 @@ export const MainContent = styled.main`
 
   ::-webkit-scrollbar-thumb
   {
-    background-color: #000000;	
+    background-color: #F7B4A7;	
   } 
 
 `;

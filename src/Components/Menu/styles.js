@@ -20,6 +20,7 @@ export const Nav = styled.nav`
 
   a {
     text-decoration: none;
-    color: #000;
+    color: #F7B4A7;
+    font-weight: 600;
     }
 `;
