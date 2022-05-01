@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   height: 80px;
-padding-bottom: 10px;
-  background-color: pink;
+  padding-bottom: 10px;
   display: flex;
   align-items: flex-end;
+  margin-bottom: 10px;
 
   ul {
     width: 25%;
@@ -21,5 +21,5 @@ padding-bottom: 10px;
   a {
     text-decoration: none;
     color: #000;
-  }
+    }
 `;
