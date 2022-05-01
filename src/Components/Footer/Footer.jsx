@@ -1,9 +1,8 @@
-import "./styles.css"
+import './styles.css'
 const Footer = () => {
-    return (
-      <footer>
-        </footer>
-    );
-  };
-  
-  export default Footer;
+  return (
+    <footer />
+  )
+}
+
+export default Footer

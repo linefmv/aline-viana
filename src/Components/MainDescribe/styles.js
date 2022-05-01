@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const MainContent = styled.main`
   display: flex;
@@ -6,7 +6,8 @@ export const MainContent = styled.main`
   width: 100%;
   max-width: 600px;
   overflow-y: scroll;
-  max-height: 77vh;
+  max-height: 95vh;
+
 
   div {
     padding: 0 2vh;
@@ -29,4 +30,4 @@ export const MainContent = styled.main`
   ::-webkit-scrollbar-thumb {
     background-color: #f7b4a7;
   }
-`;
+`

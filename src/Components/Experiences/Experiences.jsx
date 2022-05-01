@@ -3,11 +3,11 @@ import {
   ComponentTitle,
   ComponentParagraph,
   ComponentSecundaryTitle,
-  Title,
-} from "./styles";
+  Title
+} from './styles'
 
 const Experiences = ({ describeData }) => {
-  console.log(describeData);
+  console.log(describeData)
   return (
     <>
       <Title>Experiences</Title>
@@ -20,10 +20,10 @@ const Experiences = ({ describeData }) => {
               <ComponentParagraph> {item.about}</ComponentParagraph>
             </Component>
           </>
-        );
+        )
       })}
     </>
-  );
-};
+  )
+}
 
-export default Experiences;
+export default Experiences

@@ -1,4 +1,4 @@
-import { Component, ComponentTitle, ComponentParagraph } from "./styles";
+import { Component, ComponentTitle, ComponentParagraph } from './styles'
 
 const AboutMyLife = ({ describeData }) => {
   return (
@@ -11,10 +11,10 @@ const AboutMyLife = ({ describeData }) => {
               <ComponentParagraph>{item.about}</ComponentParagraph>
             </Component>
           </>
-        );
+        )
       })}
     </>
-  );
-};
+  )
+}
 
-export default AboutMyLife;
+export default AboutMyLife

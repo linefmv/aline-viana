@@ -4,11 +4,11 @@ import {
   ComponentParagraph,
   ComponentSecundaryTitle,
   ComponentLink,
-  Title,
-} from "./styles";
+  Title
+} from './styles'
 
 const Studies = ({ describeData }) => {
-  console.log(describeData);
+  console.log(describeData)
   return (
     <>
       <Title>Courses</Title>
@@ -22,10 +22,10 @@ const Studies = ({ describeData }) => {
               <ComponentLink href={item.link}>{item.name}</ComponentLink>
             </Component>
           </>
-        );
+        )
       })}
     </>
-  );
-};
+  )
+}
 
-export default Studies;
+export default Studies
