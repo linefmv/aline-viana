@@ -4,6 +4,7 @@ import getData from "./services/api";
 import Resume from "./Components/Resume/Resume";
 import MainDescribe from "./Components/MainDescribe/MainDescribe";
 import Menu from "./Components/Menu/Menu";
+import Footer from "./Components/Footer/Footer"
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Resume aboutMeData={data.aboutMe[0]} />
         </main>
       )}
+      <Footer/>
     </>
   );
 }
